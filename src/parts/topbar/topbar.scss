@@ -1,0 +1,73 @@
+header {
+    height: auto;
+}
+
+.nysirheader {
+    display: grid;
+    background-color: white;
+
+    hr {
+        margin: 0px 20px;
+        background-color: rgb(21,72,119);
+        height: 3px;
+        border: 10px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+    }
+}
+
+.headertitle {
+    display: grid;
+    grid-template-rows: auto auto 0.8fr;
+    grid-template-columns: 1fr;
+}
+
+
+#nysirlogo {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    width: 120px;
+    object-fit: scale-down;
+    padding-left: 30px;
+    z-index: 999;
+    --animate-duration: 2s;
+}
+
+.topwhitespace {
+    height: 50px;
+}
+
+.whitespace {
+    height: 50px;
+    grid-row: 1/2;
+}
+
+#gb {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    object-fit: cover;
+    --animate-duration: 1s;
+}
+
+
+
+#maintitle {
+    color: rgb(21,72,119);
+    padding: 10px 0px 10px 30px;
+}
+
+
+//RESPONSIV
+
+@media only screen and (max-width: 800px) {
+    #nysirlogo {
+        width: 70px;
+    }
+
+    .whitespace {
+        height: 20px;
+    }
+}
+
+
